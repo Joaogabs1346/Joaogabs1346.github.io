@@ -868,4 +868,14 @@ textarea {
 	text-align: center;
 }
 
+.equal {
+	display: flex;
+	align-items: center;
+  }
+  
+  .equal .folio-item {
+	height: 100%;
+  }
+  
+
 /*# sourceMappingURL=base.css.map */
