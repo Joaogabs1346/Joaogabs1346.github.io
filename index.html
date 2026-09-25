@@ -1,1352 +1,474 @@
 <!DOCTYPE html>
-	
-	<!--[if IE 8 ]><html class="no-js oldie ie8" lang="en"> <![endif]-->
-	<!--[if IE 9 ]><html class="no-js oldie ie9" lang="en"> <![endif]-->
-	<!--[if (gte IE 9)|!(IE)]><!--><html class="no-js" lang="en"> <!--<![endif]-->
-
+<html lang="en">
 <head>
-   <!--- basic page needs
-   ================================================== -->
-   <meta charset="utf-8">
-	<title>João Gabriel de Souza Pinto</title>
-	<meta name="description" content="João Gabriel de Souza Pinto - AI Engineer specialized in LLMs, AI agents and Generative AI.">  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>João Gabriel de Souza Pinto, GenAI Software Engineer</title>
+  <meta name="description" content="Senior GenAI Software Engineer building production AI systems with LLMs, multi-agent architectures, RAG and MCP. Author of MED-LLM-BR, the first clinical LLM for Brazilian Portuguese.">
+  <meta name="theme-color" content="#0e0c12">
 
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://joaogabs1346.github.io/">
+  <meta property="og:title" content="João Gabriel de Souza Pinto, GenAI Software Engineer">
+  <meta property="og:description" content="Production AI systems with LLMs, multi-agent architectures, RAG and MCP.">
+  <meta property="og:image" content="https://joaogabs1346.github.io/images/profile-pic.jpg">
+  <meta name="twitter:card" content="summary">
 
-   <!-- mobile specific metas
-   ================================================== -->
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-
- 	<!-- CSS
-   ================================================== -->
-   <link rel="stylesheet" href="css/base.css">  
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/vendor.css">     
-   <link rel="stylesheet" href="css/slidebar.css"> 
-
-   <!-- script
-   ================================================== -->   
-	
-	<script src="js/modernizr.js"></script>
-	<script src="js/pace.min.js"></script>
-	<script src="js/slidebar.js"></script>
-
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
-
-	<link rel="stylesheet" href="css/font-awesome-6/css/all.css" type="text/css">
-
-	
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
-   <!-- favicons
-	================================================== -->
-	<link rel="icon" type="image/png" href="favicon.png">
-
-</head>
-
-<body id="top">
-	<!-- header
-   ================================================== -->
-   <header>   	
-
-	   
-   	<div class="row">
-
-   		<div class="top-bar">
-   			<a class="menu-toggle" href="#"><span>Menu</span></a>
-
-	   		<div class="logo">
-		         <a href="index.html">Menu</a>
-		      </div>		      
-
-		   	<nav id="main-nav-wrap">
-					<ul class="main-navigation">
-						<li class="current"><a class="smoothscroll"  href="#intro" title="">Home</a></li>
-						<li><a class="smoothscroll"  href="#about" title="">About</a></li>
-						<li><a class="smoothscroll"  href="#resume" title="">Resume</a></li>
-						<li><a class="smoothscroll"  href="#portfolio" title="">Portfolio</a></li>
-						<li><a class="smoothscroll"  href="#services" title="">Service</a></li>
-						<li><a class="smoothscroll"  href="#contact" title="">Contact</a></li>
-					</ul>
-				</nav>    		
-   		</div> <!-- /top-bar --> 
-   		
-   	</div> <!-- /row --> 		
-   </header> <!-- /header -->
-
-	<!-- intro section
-   ================================================== -->
-   <section id="intro">   
-
-   	<div class="intro-overlay"></div>	
-
-   	<div class="intro-content">
-   		<div class="row">
-
-   			<div class="col-twelve">
-
-	   			<h5>Welcome to my profile!</h5>
-	   			<h1>João Gabriel de Souza Pinto </h1>
-
-	   			<p class="intro-position">
-	   				<span>AI Engineer</span>
-	   				<span>LLMs &amp; AI Agents</span>
-
-	   			</p>
-
-	   			<a class="button stroke smoothscroll" href="#about" title="">About me</a>
-
-	   		</div>  
-   			
-   		</div>   		 		
-   	</div> <!-- /intro-content --> 
-
-   	<ul class="intro-social">
-         <li><a href="https://github.com/Joaogabs1346"><i class="fab fa-github"></i></a></li>
-         <li><a href="https://www.linkedin.com/in/joaogabrielspinto/"><i class="fab fa-linkedin"></i></a></li>
-      </ul> <!-- /intro-social -->      	
-
-   </section> <!-- /intro -->
-
-
-   <!-- about section
-   ================================================== -->
-   <section id="about">  
-
-   	<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>About me</h5>
-   			<h2>Who is João Gabriel</h2>
-
-   			<div class="intro-info">
-
-   				<img src="images/profile-pic.jpg" alt="Profile Picture">
-
-   				<p class="lead" align="justify">
-
-					 <br><br> Hi! I'm João Gabriel, a Senior GenAI Software Engineer at Deloitte and an AI Researcher at CEIA. I design and ship production AI systems built on Large Language Models: multi-agent architectures, Retrieval-Augmented Generation (RAG) and agent orchestration with the Model Context Protocol (MCP), running on Kubernetes and serverless cloud infrastructure.<br><br>
-					My background is in NLP research. I led the training of MED-LLM-BR, the first clinical LLM for Brazilian Portuguese, which won the 3rd Place Best Paper Award at BRACIS 2024. Today I focus on turning LLMs into reliable products that solve real business problems, from fine-tuning and evaluation to deployment at scale.<br><br>
-					Take a look at my experience and projects below! <br><br>
-
-   				</p>
-   			</div>   			
-
-   		</div>   		
-   	</div> <!-- /section-intro -->
-
-   	<div class="row about-content">
-
-   		<div class="col-six tab-full">
-
-   			<h3> Profile </h3>
-   			<p>
-   				AI engineer focused on LLMs and agentic systems, with hands-on experience across the full lifecycle: research, fine-tuning, evaluation and production deployment. Clear communicator and invited speaker on Generative AI.
-   			</p>
-
-   			<ul class="info-list">
-   				<li>
-   					<strong>Name:</strong>
-   					<span>João Gabriel de Souza Pinto</span>
-   				</li>
-   				<li>
-   					<strong>Occupation:</strong>
-   					<span>Senior GenAI Software Engineer, AI Researcher</span>
-   				</li>
-				
-
-   			</ul> <!-- /info-list -->
-
-			<!-- owl-slider-languages -->
-			<div id="owl-slider-languages" class="owl-carousel skill-list" style="top:-57px">
-
-	  			<!-- Language 1 -->
-			  	<div>
-					<ul class="skill-bars">
-					   <li>
-					   	<div class="progress percent100"><span>Native</span></div>
-					   	<strong>Portuguese</strong>
-					   </li>
-				  	</ul>
-			  	</div>
-			  	<!-- \Language 1 -->
-
-				<!-- Language 2 -->
-			  	<div>
-					<ul class="skill-bars">
-	 				   <li>
-					   	<div class="progress percent100"><span>Fluent</span></div>
-					   	<strong>English</strong>
-					   </li>
-				  	</ul>
-			  	</div>
-				<!-- \Language 2 -->
-			</div>
-			<!-- \owl-slider-languages -->
-
-   		</div>
-
-   		<div class="col-six tab-full">
-			
-   			<h3> Skills </h3>
-   			<p>
-   				The technologies I use to build LLM-powered products and AI agents:
-   			</p>
-				
-			<div id="owl-slider-skills" class="owl-carousel skill-list">
-
-	  			<!-- Page 1 -->
-			  	<div>
-					<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent95"><span>Advanced</span></div>
-				   	<strong>LangChain</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>Advanced</span></div>
-				   	<strong>LangGraph</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>Advanced</span></div>
-				   	<strong>Hugging Face Transformers</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>PyTorch</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>PEFT</strong>
-				   </li>
-				  	</ul>
-			  	</div>
-			  	<!-- \Page 1 -->
-
-	  			<!-- Page 2 -->
-			  	<div>
-					<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent95"><span>Advanced</span></div>
-				   	<strong>RAG</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>Advanced</span></div>
-				   	<strong>Multi-Agent Orchestration</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>Advanced</span></div>
-				   	<strong>Model Context Protocol (MCP)</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>Advanced</span></div>
-				   	<strong>Fine-tuning (LoRA, QLoRA, SFT)</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>Advanced</span></div>
-				   	<strong>Prompt Engineering</strong>
-				   </li>
-				  	</ul>
-			  	</div>
-			  	<!-- \Page 2 -->
-
-	  			<!-- Page 3 -->
-			  	<div>
-					<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent90"><span>Advanced</span></div>
-				   	<strong>Embeddings &amp; Semantic Search</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>LLM Routing</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent80"><span>Good</span></div>
-				   	<strong>LLM Pre-training</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent80"><span>Good</span></div>
-				   	<strong>vLLM</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>LLaMA-Factory</strong>
-				   </li>
-				  	</ul>
-			  	</div>
-			  	<!-- \Page 3 -->
-
-	  			<!-- Page 4 -->
-			  	<div>
-					<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>Google ADK</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>FastMCP</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent75"><span>Good</span></div>
-				   	<strong>TensorFlow</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent95"><span>Advanced</span></div>
-				   	<strong>Python</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>SQL</strong>
-				   </li>
-				  	</ul>
-			  	</div>
-			  	<!-- \Page 4 -->
-
-	  			<!-- Page 5 -->
-			  	<div>
-					<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>AWS (Lambda, SQS, EKS, Bedrock)</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>GCP (Vertex AI, Cloud Run)</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent80"><span>Good</span></div>
-				   	<strong>Kubernetes</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>Docker</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>Good</span></div>
-				   	<strong>Terraform</strong>
-				   </li>
-				  	</ul>
-			  	</div>
-			  	<!-- \Page 5 -->
-
-	  			<!-- Page 6 -->
-			  	<div>
-					<ul class="skill-bars">
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>PostgreSQL / pgvector</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>ChromaDB / Qdrant</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent90"><span>Advanced</span></div>
-				   	<strong>FastAPI / Flask</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent70"><span>Good</span></div>
-				   	<strong>Node.js</strong>
-				   </li>
-				   <li>
-				   	<div class="progress percent85"><span>Advanced</span></div>
-				   	<strong>Azure DevOps / GitHub</strong>
-				   </li>
-				  	</ul>
-			  	</div>
-			  	<!-- \Page 6 -->
-
-			</div> <!-- \owl-slider-skills -->
-
-   		</div> <!-- \col-six tab-full -->
-
-   	</div>
-
-   	<div class="row button-section">
-   		<div class="col-twelve">
-   			<a href="#contact" title="Hire Me" class="button stroke smoothscroll">Talk to me </a>
-   			<a href="pdf/cv/cvJoaoGabriel.pdf" title="Download CV" class="button button-primary">Download my CV</a>
-   		</div>   		
-   	</div>
-
-   </section> <!-- /process-->    
-
-   <!-- resume Section
-   ================================================== -->
-	<section id="resume" class="grey-section">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Resume</h5>
-   			<h1>My Credentials</h1>
-
-   			<p class="lead">
-				Professional experience, certifications and academic background in Machine Learning, NLP and Generative AI.
-   			</p>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Experiences</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-		   		<div id="owl-slider-work" class="owl-carousel certificate-list">
-					<!-- Job 8 -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-code"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>
-								<a href="https://www.linkedin.com/company/deloitte/posts/?feedView=all"> Deloitte - Disruption Office (DO) </a>
-							</h3>
-							<p>May 2025 - Present | Remote, Brazil</p>
-							<p>References:</p>
-							<p>Paulo Lima - LinkedIn: <a href="https://www.linkedin.com/in/paulo-jg-lima/">https://www.linkedin.com/in/paulo-jg-lima/</a></p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Senior GenAI Software Engineer</h4>
-						 <h5>Full-time</h5>
-						 Architected and developed the multi-agent orchestrator behind <strong>TaxBrain</strong>, one of Deloitte's flagship Tax assets: a high-investment platform that helps enterprise clients navigate Brazil's 2026 tax reform. Built the core chatbot with AI agents and Retrieval-Augmented Generation (RAG) to retrieve and surface specific regulatory changes from the new tax legislation.
-						  <h5>Technical highlights:</h5>
-						  <h6>Multi-agent orchestration:</h6>
-						  Built the agent orchestration layer with LangGraph and Flask, enabling dynamic multi-agent workflows deployed on Kubernetes (AWS EKS) for scalable, production-grade inference.<br><br>
-						  <h6>Model Context Protocol (MCP):</h6>
-						  Redesigned the orchestrator architecture used across the Disruption Office around MCP, giving teams finer control over tool routing, prompt management and agent behavior.<br><br>
-						  <h6>Invited talks:</h6>
-						  Delivered 2 invited talks on GenAI applications, one for PRODAM (São Paulo City IT Agency) and one at the Jardim Digital event, representing Deloitte's AI innovation practice.<br><br>
-
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<!-- \Job 8 -->
-					<!-- Job 7 -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-code"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>
-								<a href="https://www.linkedin.com/company/centrodeexcelenciaemia/posts/?feedView=all"> CEIA - Centro de Excelência em Inteligência Artificial </a>
-							</h3>
-							<p>February 2025 - Present | Remote, Brazil</p>
-							<p>References:</p>
-							<p>Anderson Carlos - LinkedIn: <a href="https://www.linkedin.com/in/andcarlos/">https://www.linkedin.com/in/andcarlos/</a></p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>AI Researcher</h4>
-						 <h5>Research</h5>
-						 Led the end-to-end development of a multi-agent WhatsApp chatbot, owning the full architecture from the Meta WhatsApp Business API integration to production deployment.
-						  <h5>Technical highlights:</h5>
-						  <h6>Event-driven architecture:</h6>
-						  Designed and implemented an event-driven system with AWS Lambda, Amazon SQS (FIFO queues) and Google's Agent Development Kit (ADK), following message-bus patterns for reliable, ordered message processing.<br><br>
-						  <h6>Serverless infrastructure:</h6>
-						  Managed the complete infrastructure setup on AWS serverless services, including webhook configuration, message routing and real-time agent orchestration.<br><br>
-
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<!-- \Job 7 -->
-					<!-- Job 6 -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-code"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>
-								<a href="https://www.linkedin.com/company/comsentimento/posts/?feedView=all"> Comsentimento </a>
-							</h3>
-							<p>February 2024 - February 2025 | Remote, Brazil</p>
-							<p>References:</p>
-							<p>Guilherme Sakajiri - LinkedIn: <a href="https://www.linkedin.com/in/guilhermesakajiri/">https://www.linkedin.com/in/guilhermesakajiri/</a></p>
-							<p>Lucas Silva Oliveira - LinkedIn: <a href="https://www.linkedin.com/in/lucassilvaoliveira/">https://www.linkedin.com/in/lucassilvaoliveira/</a></p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>NLP Data Scientist</h4>
-						 <h5>Full-time</h5>
-						 Applied clinical NLP and LLMs to match patients with clinical trials, working on production pipelines that analyze eligibility criteria in medical notes.
-						  <h5>Technical highlights:</h5>
-						  <h6>Clinical LLMs in production:</h6>
-						  Integrated open-source clinical LLMs (BioMistral, Meditron) into the production pipeline, improving the automated analysis of clinical study criteria in medical notes.<br><br>
-						  <h6>Semantic search:</h6>
-						  Fine-tuned embedding models for the semantic search system, increasing retrieval accuracy for clinical trial matching.<br><br>
-						  <h6>Evaluation &amp; monitoring:</h6>
-						  Designed and deployed evaluation methods for model outputs with a real-time monitoring dashboard, improving pipeline reliability and speeding up decision-making.<br><br>
-						  <h6>Com+Care chatbot:</h6>
-						  Contributed to Com+Care, a WhatsApp chatbot built on a multi-agent architecture (LangGraph) that answers patients' clinical study questions and surfaces relevant ClinicalTrials.gov research.<br><br>
-
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<!-- \Job 6 -->
-					<!-- Job 5 -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-code"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>
-								<a href="https://www.linkedin.com/company/hailab-pucpr/"> HAILab-PUCPR - Health Artificial Intelligence Lab </a>
-							</h3>
-							<p>October 2023 - February 2025</p>
-							<p>References:</p>
-							<p>NLP Researcher: Andrey Rodrigues de Freitas - LinkedIn: <a href="https://www.linkedin.com/in/andreyfreitas/">https://www.linkedin.com/in/andreyfreitas/</a></p>
-							<p>NLP Researcher: Anderson Carlos - LinkedIn: <a href="https://www.linkedin.com/in/andcarlos/">https://www.linkedin.com/in/andcarlos/</a></p>
-							<p></p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>NLP Researcher</h4>
-						 <h5>Full-time</h5>
-						 Led the development of large language models specialized in Brazilian Portuguese clinical and biomedical text, producing the first LLM trained on Brazilian clinical data. Owned the full data lifecycle, from cleaning and de-identifying sensitive patient records (LGPD-compliant) to training, evaluation and inference.
-						 <p>Trained models on Google Cloud Vertex AI with LoRA, QLoRA and full-parameter fine-tuning, scaling from a single NVIDIA A100 to multi-GPU distributed training. The research was published as <strong>"MED-LLM-BR: Developing Resource-Efficient Clinical LLMs for Brazilian Portuguese"</strong> at BRACIS 2024 (Springer Nature) and received the <strong>3rd Place Best Paper Award</strong>.</p>
-							<p>
-						  <h5>Technical highlights:</h5>
-						  <h6>Continued pre-training (LLaMA 2 7B):</h6>
-						  Ran domain-adaptive pre-training of the LLaMA 2 7B base model on clinical and biomedical corpora using LLaMA-Factory and Hugging Face Accelerate.
-							</p>
-						  <h6>Supervised fine-tuning:</h6>
-						  Applied SFT on biomedical question-answering datasets to turn the domain-adapted base model into an instruction-following clinical assistant.<br><br>
-
-						  <h6>Evaluation &amp; inference:</h6>
-						  Built the evaluation and inference pipeline, benchmarking models on MMLU and custom clinical metrics (accuracy, relevance and generation quality), with scripts to compare multiple models side by side. This work set baseline benchmarks for Portuguese clinical NLP.
-
-						</div>
-
-					</div> <!-- /timeline-block -->
-				   <!-- \Job 5 -->
-					<!-- Job 4 -->
-		   			<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fa fa-code"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-	   						<h3>
-	   							<a href="https://cadastra.com/pt/"> Cadastra </a>
-	   						</h3>
-		   					<p>September 2022 - February 2024</p>
-							   <p>References:</p>
-							   <p>SEO Data Engineer: Gabriel Machado - LinkedIn: <a href="https://www.linkedin.com/in/gabriel-ant-machado/">https://www.linkedin.com/in/gabriel-ant-machado/</a></p>
-							   <p>SEO Coordinator: Fernanda Aparecida - LinkedIn: <a href="https://www.linkedin.com/in/fernanda-aparecida-s/">https://www.linkedin.com/in/fernanda-aparecida-s/</a></p>
-		   				</div>
-
-
-		   				<div class="timeline-content">
-		   					<h4>Junior Data Scientist</h4>
-							<h5>SEO &amp; Data team</h5>
-							Built data pipelines, web scrapers and LLM-powered tools for the SEO practice of a digital marketing agency. Delivered API integrations, automated reporting and Generative AI applications used by enterprise clients such as Samsung, Vivara and Gerdau.
-		   					<p>
-							 <h5>Technical highlights:</h5>
-							 <h6>LLM content generation:</h6>
-							  Designed and shipped an end-to-end pipeline that feeds crawler and analytics data (Screaming Frog, Ahrefs, GA4) into the OpenAI GPT API to generate SEO content, surfaced in an automated dashboard adopted by 32 clients. Extended it with LangChain agents to produce on-brand product descriptions, blog articles and image-based content.
-		   					</p>
-							 <h6>Cloud data collection (AWS):</h6>
-							 Deployed Selenium-based scrapers on AWS EC2 to collect data from Google Search Console, Google Trends, site: queries, robots.txt files and server logs, persisting the results to AWS S3 for downstream analytics.<br><br>
-
-							 <h6>RAG onboarding assistant (hackathon winner):</h6>
-							 Won the company hackathon with a Retrieval-Augmented Generation Q&amp;A assistant built with LangChain, ChromaDB, Streamlit and the ChatGPT API. Indexed internal onboarding PDFs (departments, roles, timekeeping policies) into a vector database, letting new hires get grounded answers in natural language.
-
-		   				</div>
-
-		   			</div> <!-- /timeline-block -->
-					<!-- \Job 4 -->
-
-					<!-- Job 3 -->
-		   			<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fas fa-user"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-	   						<h3>
-	   							<a href="http://www.malta.com.br/"> Malta Brewery</a>
-	   						</h3>
-		   					<p>Feb 2019 - Apr 2022</p>
-							   <p>References:</p>
-							   <p>Industrial Manager: Rogério Belline - Linkedin: <a href="https://www.linkedin.com/in/rog%C3%A9rio-wohnrath-bellini-9433843b/">https://www.linkedin.com/in/rog%C3%A9rio-wohnrath-bellini-9433843b/</a></p>
-							   <p>Process Supervisor: Anderson Ides - Linkedin: <a href="https://www.linkedin.com/in/anderson-ides-49a0a34b/">https://www.linkedin.com/in/anderson-ides-49a0a34b/</a></p>
-						</div>
-							   
-
-
-		   				<div class="timeline-content">
-		   					<h4>Production Planner Analyst</h4>
-							
-							<h5>Full-time</h5>
-		   					<p>
-								Planned and monitored brewery production lines in partnership with the Head Brewer and Industrial Manager. This is where I first used data to drive operational decisions.
-								<h6>Production planning &amp; analytics:</h6>Built spreadsheet models and dashboards for weekly production planning, and supported line managers with process control and daily production reporting, helping reduce production losses.<br><br>
-								<h6>Inventory &amp; ERP:</h6> Owned the monthly closing of raw materials and production inputs, including data entry and reconciliation in the company's ERP system.
-		   					</p>
-
-		   				</div>
-
-		   			</div> <!-- /timeline-block -->
-					<!-- \Job 3 -->
-		   			</div> <!-- /timeline-block -->
-					<!-- \Job 1 -->
-
-   				</div> 	<!-- \owl-slider-work -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-	
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Courses</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-		   		<div id="owl-slider-cert" class="owl-carousel certificate-list">
-					<!-- Certificate 7 -->
-		   			<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fab fa-python"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-		   					<h3>
-		   						<a href="pdf/dsa/certificate-deploy-de-modelos-de-machine-learning-5f7aa55be32fc30f0d0ea09e-2.pdf">Certificate</a>
-		   					</h3>
-		   					<p>June,2023</p>
-		   				</div>
-
-		   				<div class="timeline-content">
-		   					<h4>Deploying Machine Learning Models</h4>
-		   					<p>
-								Deploying and serving ML models locally and in the cloud (AWS, GCP, Azure) using TensorFlow, scikit-learn, Spark MLlib, MLflow, Kubeflow, Flask and Streamlit, covering the MLOps lifecycle from packaging to monitoring.
-		   					</p>
-		   				</div>
-
-		   			</div>
-					<!-- /timeline-block -->
-					<!-- /Certificate 7 -->
-
-					<!-- Certificate 6 -->
-					<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fab fa-python"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-		   					<h3>
-		   						<a href="pdf/dsa/certificate-python-fundamentos-para-analise-de-dados-30-57b4a75247d7dd688d8b456b.pdf">Certificate</a>
-		   					</h3>
-		   					<p>July,2022</p>
-		   				</div>
-
-		   				<div class="timeline-content">
-		   					<h4>Python for Data Analysis 3.0</h4>
-		   					<p>
-							Python for data analysis with NumPy, pandas, Matplotlib and Seaborn: data wrangling, exploratory data analysis (EDA), visualization and data-driven problem solving.
-							</p>
-		   				</div>
-
-		   			</div> <!-- /timeline-block -->
-					<!-- /Certificate 6 -->
-
-					<!-- Certificate 5 -->
-		   			<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fas fa-search-dollar"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-		   					<h3>
-		   						<a href="https://coursera.org/share/a841104c3adb01a9dbb78984bc9b16c2">Certificate</a>
-		   					</h3>
-		   					<p>September 4, 2022</p>
-		   				</div>
-
-		   				<div class="timeline-content">
-		   					<h4>Introduction to statistics</h4>
-		   					<p>
-								Descriptive and inferential statistics: probability distributions, sampling, confidence intervals, hypothesis testing and regression, the foundations of ML model evaluation.
-		   					</p>
-		   				</div>
-
-		   			</div> <!-- /timeline-block -->
-					<!-- /Certificate 5 -->
-
-					<!-- Certificate 4 -->
-		   			<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fab fa-python"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-		   					<h3>
-		   						<a href="https://mycourse.app/Gk3UjdhjM5RGiZzz6">Certificate</a>
-		   					</h3>
-		   					<p>October, 2022</p>
-		   				</div>
-
-		   				<div class="timeline-content">
-		   					<h4>Fundamentals of Software Engineering</h4>
-		   					<p>
-							Software engineering practices for data and ML code: modular, clean and documented Python, unit testing, code review, Git version control, logging and debugging.
-		   					</p>
-		   				</div>
-
-		   			</div> <!-- /timeline-block -->
-					<!-- /Certificate 4 -->
-
-					<!-- Certificate 3 -->
-					<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fab fa-python"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-		   					<h3>
-		   						<a href="https://coursera.org/share/c4149f99605c146bbda381a2d0330219">Certificate</a>
-		   					</h3>
-		   					<p>December, 2021</p>
-		   				</div>
-
-		   				<div class="timeline-content">
-		   					<h4>Introduction to Big Data</h4>
-		   					<p>
-		   						 Core Big Data concepts (volume, velocity, variety) and distributed processing with Apache Spark, including real-world architectures and use cases.
-		   					</p>
-		   				</div>
-
-		   			</div> <!-- /timeline-block -->
-					<!-- /Certificate 3 -->
-
-					<!-- Certificate 2 -->
-		   			<div class="timeline-block">
-						
-		   				<div class="timeline-ico">
-		   					<i class="fas fa-search-dollar"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-		   					<h3>
-		   						<a href="https://mycourse.app/4eLmn1xMUCFBjG7m9">Certificate</a>
-		   					</h3>
-		   					<p>July, 2022</p>
-		   				</div>
-
-		   				<div class="timeline-content">
-		   					<h4>Big Data Fundamentals 3.0</h4>
-		   					<p>
-		   					Big Data architecture and storage: data lakes vs. data warehouses, ingestion pipelines and the Hadoop/Spark ecosystem.
-		   					</p>
-		   				</div>
-
-		   			</div> <!-- /timeline-block -->
-					<!-- /Certificate 2 -->				
-
-					<!-- Certificate 1 -->
-					<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fa fa-cogs"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-		   					<h3>
-		   						<a href="https://analytics.google.com/analytics/academy/certificate/pDWEeywvTk-5hprNHekzQw">Certificate</a>
-		   					</h3>
-		   					<p>October, 2022</p>
-		   				</div>
-
-		   				<div class="timeline-content">
-		   					<h4>Google Analytics Advanced</h4>
-		   					<p>
-		   					Advanced Google Analytics: data collection and processing, custom dimensions and metrics, segmentation, attribution and reporting for marketing analytics.
-		   					</p>
-		   				</div>
-		   			</div> <!-- /timeline-block -->
-					<!-- \Certificate 1 -->
-
-				</div> 	<!-- \owl-slider-cert -->
-
-   			</div> <!-- /timeline-wrap -->  
-
-   		</div> <!-- /col-twelve -->
-
-   	</div> <!-- /resume-timeline -->
-   	
-   	<div class="row resume-timeline">
-
-   		<div class="col-twelve resume-header">
-
-   			<h2>Academic Background</h2>
-
-   		</div> <!-- /resume-header -->
-
-   		<div class="col-twelve">
-
-   			<div class="timeline-wrap">
-
-		   		<div id="owl-slider-academy" class="owl-carousel certificate-list">
-
-					<!-- Academy 2 -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fa fa-graduation-cap"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>
-								Postgraduate
-							</h3>
-							<h4><a href="https://ufg.br/"> UFG - AKCIT/Embrapii </a></h4>
-							<p>2025 - Present | Goiânia, Brazil</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Software Engineering: Automation and Innovation with Generative AI</h4>
-							<p>
-							Postgraduate program at the Federal University of Goiás (UFG), in partnership with AKCIT/Embrapii, focused on software engineering, automation and building production applications with Generative AI.
-							</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<!-- /Academy 2 -->
-
-					<!-- Academy 1 -->
-		   			<div class="timeline-block">
-
-		   				<div class="timeline-ico">
-		   					<i class="fa fa-graduation-cap"></i>
-		   				</div>
-
-		   				<div class="timeline-header">
-		   					<h3>
-		   						Bachelor's degree
-		   					</h3>
-							<h4>
-								<a href="https://www.pucpr.br/"> PUC-PR </a>
-							</h4>
-		   					<p>September 2020 - April 2023 | Londrina, Brazil</p>
-		   				</div>
-
-		   				<div class="timeline-content">
-		   					<h4>BTech, Big Data Technology and Analytics</h4>
-		   					<p>
-							Technology degree in Big Data and Analytics from the Pontifical Catholic University of Paraná (PUCPR), covering data engineering, machine learning, statistics, databases and cloud computing.
-		   					</p>
-		   				</div>
-
-		   			</div> <!-- /timeline-block -->
-					<!-- /Academy 1 -->
-
-					<!-- Publication 1 -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fas fa-book"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>
-								Publication
-							</h3>
-							<h4>Springer Nature - BRACIS 2024</h4>
-							<p>January 2025</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>MED-LLM-BR: Developing Resource-Efficient Clinical LLMs for Brazilian Portuguese</h4>
-							<p>
-							J. G. S. Pinto et al. Published in Springer Nature's Intelligent Systems book series (BRACIS 2024). Introduced the first Brazilian clinical LLM, trained on diverse clinical datasets with LoRA and QLoRA fine-tuning and validated with a robust evaluation protocol. DOI: in press (Copyright 2025).
-							</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<!-- /Publication 1 -->
-
-					<!-- Award 1 -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fas fa-trophy"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>
-								Award
-							</h3>
-							<h4>BRACIS 2024</h4>
-							<p>2024</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Best Paper Award - 3rd Place</h4>
-							<p>
-							Lead author of the award-winning MED-LLM-BR paper, selected among hundreds of submissions at the Brazilian Conference on Intelligent Systems (BRACIS), Brazil's premier AI conference.
-							</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<!-- /Award 1 -->
-
-					<!-- Award 2 -->
-					<div class="timeline-block">
-
-						<div class="timeline-ico">
-							<i class="fas fa-trophy"></i>
-						</div>
-
-						<div class="timeline-header">
-							<h3>
-								Recognition
-							</h3>
-							<h4>Intel Software Innovator Program</h4>
-							<p>2024</p>
-						</div>
-
-						<div class="timeline-content">
-							<h4>Highlight of the Month</h4>
-							<p>
-							Recognized by Intel for building a quantized GGUF version of the clinical LLM in collaboration with Alessandro de Oliveira, enabling efficient edge deployment of healthcare AI models.
-							</p>
-						</div>
-
-					</div> <!-- /timeline-block -->
-					<!-- /Award 2 -->
-
-
-   				</div> 	<!-- \owl-slider-academy -->
-
-   			</div> <!-- /timeline-wrap -->   			
-
-   		</div> <!-- /col-twelve -->
-   		
-   	</div> <!-- /resume-timeline -->
-
-	</section> <!-- /features -->
-
-	<!-- Portfolio Section ================================================== -->
-
-	<!-- Portfolio Section ================================================== -->
-
-	<section id="portfolio">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Portfolio</h5>
-   			<h1>Check out some of my projects</h1>
-
-   			<p class="lead">
-				Now that you know a little about me, I would like to present some of the projects I have worked on. Please feel free to analyze them, and if you have any questions, suggestions, or just want to chat about any of them, don't hesitate to contact me!
-   			</p>
-
-   		</div>   		
-   	</div> <!-- /section-intro--> 
-
-   	<div class="row portfolio-content">
-
-   		<div class="col-twelve">
-
-	   		<div id="owl-slider-port" class="owl-carousel portfolio-list">
-
-	   			<!-- Project 4 -->
-		        <div id="folio-wrapper" class="block-1-1 block-mob-full stack">
-
-	        		<div class="bgrid folio-item">
-						<div class="item-wrap">
-		               	
-		               		<h5>Data Science Project</h5> <br>
-
-			               	<img src="images/portfolio/crypto.png" alt="Cryptocurrency-Daily">
-			               	<a href="#modal-13" class="overlay">              		                  
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Cryptocurrency-Daily</h3>	     					    
-								    	<span class="folio-types">
-							       	 		 Machine Learning and Deploy
-								      	</span>		     		
-								   	</div> 	                      	
-								</div>                    
-		                  	</a>
-		            	</div>
-	        		</div> <!-- /folio-item -->
-
-		            <!-- modal popups - begin ============================================================= -->
-		            
-		            <div id="modal-13" class="popup-modal slider mfp-hide">	
-
-						<div class="media">
-							<img src="images/portfolio/modals/crypto2.png" alt=""/>
-						</div>      	
-
-						<div class="description-box">
-					  		<h4>Cryptocurrency Daily Data Analysis and Visualization</h4>		      
-						  	<p>
-								This project is a comprehensive solution for making cryptocurrency price predictions that includes both front-end and back-end components, as well as machine learning functionality. It provides a useful tool for those interested in analyzing and predicting cryptocurrency prices.
-						  	</p>
-
-							<div class="categories">Machine Learning & Flask</div>			               
-						</div>
-
-						<div class="link-box">
-							<a href="https://github.com/Joaogabs1346/Cryptocurrency-Daily">View project</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>		      
-
-					</div> <!-- /modal -->
-
-					<!-- modal popups - end ============================================================ -->
-
-		        </div> <!-- /portfolio-wrapper --> 
-				<!-- \Project 4 -->
-
-	   			
-	   			<!-- Project 3 -->
-		        <div id="folio-wrapper" class="block-1-1 block-mob-full stack">
-
-	        		<div class="bgrid folio-item">
-						<div class="item-wrap">
-		               	
-		               		<h5>Data Science Project</h5> <br>
-
-			               	<img src="images/portfolio/churn.png" alt="">
-			               	<a href="#modal-03" class="overlay">              		                  
-								<div class="folio-item-table">
-									<div class="folio-item-cell">										  
-										<h3 class="folio-title">Customer Churn Prediction</h3>	 															    
-								    	<span class="folio-types">
-							       	 		Machine Learning and Deploy
-								      	</span>		     		
-								   	</div> 	                      	
-								</div>                    
-		                  	</a>
-		            	</div>
-	        		</div> <!-- /folio-item -->
-
-		            <!-- modal popups - begin ============================================================= -->
-		            
-		            <div id="modal-03" class="popup-modal slider mfp-hide">	
-
-						<div class="media">
-							<img src="images/portfolio/modals/churn2.png" alt="" />
-						</div>      	
-
-						<div class="description-box">
-					  		<h4>Customer Churn Prediction using Machine Learning</h4>		      
-						  	<p>
-								In this project, I built a machine learning model that predicts customer churn for a telecommunications company. The goal was to help the company take proactive steps to retain customers and reduce revenue loss. I used a dataset containing customer demographics, account information, and usage patterns to train and evaluate several machine learning models. 
-						  	</p>
-
-							<div class="categories">Machine Learning & Flask</div>			               
-						</div>
-
-						<div class="link-box">
-							<a href="https://github.com/Joaogabs1346/Machine-Learning/tree/main/Churn">View project</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>		      
-
-					</div> <!-- /modal -->
-
-					<!-- modal popups - end ============================================================ -->
-
-		        </div> <!-- /portfolio-wrapper --> 
-				<!-- \Project 3 -->
-
-
-	   			<!-- Project 1 -->
-		        <div id="folio-wrapper" class="block-1-1 block-mob-full stack">
-
-	        		<div class="bgrid folio-item">
-						<div class="item-wrap">
-		               	
-		               		<h5>Data Science Project</h5> <br>
-
-			               	<img src="images/portfolio/water2.png" alt="">
-			               	<a href="#modal-01" class="overlay">              		                  
-								<div class="folio-item-table">
-									<div class="folio-item-cell">
-										<h3 class="folio-title">Water Prediction</h3>	     					    
-								    	<span class="folio-types">
-											Machine Learning and Deploy
-								      	</span>		     		
-								   	</div> 	                      	
-								</div>                    
-		                  	</a>
-		            	</div>
-	        		</div> <!-- /folio-item -->
-
-		            <!-- modal popups - begin ============================================================= -->
-		            
-		            <div id="modal-01" class="popup-modal slider mfp-hide">	
-
-						<div class="media">
-							<img src="images/portfolio/modals/water.png" alt=""/>
-						</div>      	
-
-						<div class="description-box">
-					  		<h4>Predicting Water Potability using Machine Learning</h4>		      
-						  	<p>
-							 I built a machine learning model that predicts the potability of water based on several physicochemical properties such as pH, hardness, and sulfate. The goal was to help ensure the safety and quality of drinking water. I used a dataset containing water quality measurements from various sources to train and evaluate several machine learning models.
-						  	</p>
-
-							<div class="categories">Machine Learning & Streamlit</div>			               
-						</div>
-
-						<div class="link-box">
-							<a href="https://github.com/Joaogabs1346/Machine-Learning/blob/main/Water%20Potability/Water_potability.ipynb">View project</a>
-							<a href="#" class="popup-modal-dismiss">Close</a>
-						</div>		      
-
-					</div> <!-- /modal -->
-
-					<!-- modal popups - end ============================================================ -->
-
-		        </div> <!-- /portfolio-wrapper --> 
-				<!-- \Project 1 -->
-
-	   		</div> 	<!-- \owl-slider-port -->
-
-   		</div>  <!-- /twelve -->   
-
-   	</div> <!-- /portfolio-content --> 
-		
-	</section> <!-- /portfolio --> 
-
-
-	<!-- Phrase Section ================================================== -->
-
-	<section id="cta" class="grey-section">
-
-   	<div class="row cta-content">
-
-   		<div class="col-twelve section-ads">  
-
-     		<h2 class="h01">Miyamoto Musashi, The Book of Five Rings </h2>
-
-      		<aside class="pull-quote">
-		   		<blockquote>
-			   		<p>
-					there is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within. Everything exists. Seek nothing outside of yourself.
-	        		</p>
-				</blockquote>
-
-			</aside> <!-- /pull-quote -->  
-
-   		</div> <!-- /section-ads -->
-
-   	</div> <!-- /cta-content -->
-
-   </section> <!-- /cta --> 
-
-	<!-- services Section
-   ================================================== -->
-	<section id="services">
-
-		<div class="overlay"></div>
-
-		<div class="row section-intro">
-	   		<div class="col-twelve">
-
-	   			<h5>Services</h5>
-	   			<h1>What can I do for you?</h1>
-
-	   			<p class="lead">
-					These are some jobs where I can use my skills to generate efficient and effective solutions to problems you may face.
-	   			</p>
-
-	   		</div>   		
-		</div> <!-- /section-intro -->
-
-	   	<div class="row services-content">
-
-	   		<div id="owl-slider" class="owl-carousel services-list">
-
-		      	<div class="service">	
-
-		      		<span class="icon"><i class="icon-bar-chart"></i></span>            
-
-		            <div class="service-content">	
-
-		            	<h3>Descriptive Analysis</h3>
-
-			            <p class="desc">
-			            	Apply different statistical techniques to describe, organize and summarize your dataset.
-		         		</p>
-		         		
-		         	</div> 	         	 
-
-					</div> <!-- /service -->
-
-					<div class="service">	
-
-						<span class="icon"><i class="icon-search"></i></span>                          
-
-		            <div class="service-content">	
-
-		            	<h3>Diagnostic Analysis</h3>  
-
-			            <p class="desc">
-			            	advanced analytics based on drill-downs, data discovery, data mining and correlations to examine your data and answer the question, "Why did this happen?"
-						</p>
-
-		            </div>	                          
-
-				   </div> <!-- /service -->
-
-				   <div class="service">
-
-				   	<span class="icon"><i class="icon-wrench"></i></span>		            
-
-		            <div class="service-content">
-
-		            	<h3>Machine Learning Deploy <br> </h3>
-
-			            <p class="desc">
-			            Build predictive models to analyze historical and current facts to make predictions about future or unknown events and put this into production for consumption
-						</p>
-
-		            </div> 	            	               
-
-				   </div> <!-- /service -->
-
-					<div class="service">
-
-						<span class="icon"><i class="icon-edit"></i></span>	              
-
-		            <div class="service-content">
-
-		            	<h3>Prescriptive Analysis</h3>
-
-			            <p class="desc">
-			            	Use the best stock strategy you can take based on available data.
-		         		</p> 
-		         		
-		            </div>                
-
-					</div> <!-- /service -->
-
-				   <div class="service">
-
-				   	<span class="icon"><i class="icon-signal"></i></span>	            
-
-		            <div class="service-content">
-
-		            	<h3>Data Visualization & Dashboard Design</h3>
-
-			            <p class="desc">
-			            	Create responsive and interactive charts with great designs to summarize your data and visualize the Big Picture.
-						</p>
-
-		            </div>	               
-
-				   </div> <!-- /service -->
-
-
-		      </div> <!-- /services-list -->
-	   		
-	   	</div> <!-- /services-content -->
-		
-	</section> <!-- /services -->	
-
-
-	<!-- stats Section
-   ================================================== -->
-	<section id="stats" class="count-up">
-	</section> <!-- /stats -->
-
-	
-   <!-- contact
-   ================================================== -->
-	<section id="contact">
-
-		<div class="row section-intro">
-   		<div class="col-twelve">
-
-   			<h5>Contact</h5>
-   			<h1>TALK TO ME!</h1>
-
-
-   		</div> 
-   	</div> <!-- /section-intro -->
-
-   	<div class="row contact-form">
-
-		<a href="mailto:joao_g2000@hotmail.com"><button class="submitform">Send email</button></i></a>
-   		
-   	</div> <!-- /contact-form -->
-		
-	</section> <!-- /contact -->
-
-
-   <!-- footer
-   ================================================== -->
-
-   <footer>
-     	<div class="row">
-
-     		<div class="col-six tab-full pull-right social">
-
-			   	<ul class="footer-social">        
-					<li><a href="https://github.com/Joaogabs1346"><i class="fab fa-github"></i></a></li>
-					<li><a href="https://www.linkedin.com/in/joaogabrielspinto/"><i class="fab fa-linkedin"></i></a></li>
-		      	</ul> <!-- /intro-social -->    
-
-      		</div>
-
-
-	  	<div id="go-top">
-	 		<a class="smoothscroll" title="Back to Top" href="#top"><i class="fas fa-arrow-up"></i></a>
-	  	</div>
-
-      	</div> <!-- /row -->     	
-   </footer>  
-
-   <div id="preloader"> 
-    	<div id="loader"></div>
-   </div> 
-
-   <!-- Java Script
-   ================================================== --> 
-   <script src="js/jquery-3.5.1.min.js"></script>
-   <script src="js/jquery-migrate-1.4.1.min.js"></script>
-   <script src="js/plugins.js"></script>
-   <script src="js/main.js"></script>
-
+<body>
+
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path d="M12 .3a12 12 0 0 0-3.8 23.38c.6.12.83-.26.83-.57l-.02-2.04c-3.34.72-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.81 1.3 3.5 1 .1-.78.42-1.3.76-1.6-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.14-.3-.54-1.52.1-3.18 0 0 1-.32 3.3 1.23a11.5 11.5 0 0 1 6 0c2.28-1.55 3.29-1.23 3.29-1.23.64 1.66.24 2.88.12 3.18a4.65 4.65 0 0 1 1.23 3.22c0 4.61-2.8 5.63-5.48 5.92.42.36.81 1.1.81 2.22l-.01 3.29c0 .31.2.69.82.57A12 12 0 0 0 12 .3"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path d="M2 4h20a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm0 2v.4l10 6.25L22 6.4V6H2zm20 2.75-9.47 5.92a1 1 0 0 1-1.06 0L2 8.75V18h20V8.75z"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M11 3h2v9.17l3.59-3.58L18 10l-6 6-6-6 1.41-1.41L11 12.17V3zM4 19h16v2H4z"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="#top">jgsp<span>_</span></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="nav-cv" href="pdf/cv/cvJoaoGabriel.pdf" target="_blank" rel="noopener">Resume</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- Hero -->
+    <section class="hero" id="top">
+      <div class="wrap">
+        <p class="hero-role">Senior GenAI Software Engineer at <a href="https://www.linkedin.com/company/deloitte/">Deloitte</a> and AI Researcher at <a href="https://www.linkedin.com/company/centrodeexcelenciaemia/">CEIA</a></p>
+        <h1>João Gabriel de Souza Pinto</h1>
+        <p class="stream"><span class="stream-prompt" aria-hidden="true">&gt; </span><span data-stream>I build production AI systems on large language models: multi-agent orchestration, RAG and MCP, from fine-tuning and evaluation to deployment on Kubernetes and serverless cloud.</span><span class="caret" aria-hidden="true"></span></p>
+        <div class="actions">
+          <a class="btn btn-primary" href="pdf/cv/cvJoaoGabriel.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-download"/></svg>Download resume</a>
+          <a class="btn" href="https://www.linkedin.com/in/joaogabrielspinto/"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+          <a class="btn" href="https://github.com/Joaogabs1346"><svg aria-hidden="true"><use href="#i-github"/></svg>GitHub</a>
+          <a class="btn" href="mailto:joaogabrieldesouza58@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>Email</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="wrap">
+        <h2 class="section-title">About</h2>
+        <div>
+          <div class="about">
+            <img src="images/profile-pic.jpg" alt="Portrait of João Gabriel" width="176" height="176">
+            <div class="prose">
+              <p class="lead">I design and ship AI systems built on large language models, and I care about the part that comes after the demo: making them reliable in production.</p>
+              <p>At Deloitte I architected the multi-agent orchestrator behind TaxBrain, a flagship platform that helps enterprise clients navigate Brazil's 2026 tax reform. At CEIA I lead an event-driven, multi-agent WhatsApp assistant running on AWS serverless.</p>
+              <p>My background is NLP research. I led the training of MED-LLM-BR, the first clinical LLM for Brazilian Portuguese, which received the 3rd Place Best Paper Award at BRACIS 2024.</p>
+            </div>
+          </div>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd>Brazil, working remotely</dd></div>
+            <div><dt>Focus</dt><dd>LLMs, AI agents, RAG, MCP</dd></div>
+            <div><dt>Languages</dt><dd>Portuguese (native), English (highly proficient)</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- What I build -->
+    <section class="section" id="services">
+      <div class="wrap">
+        <h2 class="section-title">What I build<small>Problems I can take from idea to production.</small></h2>
+        <div class="build">
+          <article>
+            <h3>LLM applications and RAG</h3>
+            <p>Assistants and search tools grounded in your own documents, with retrieval, embeddings and evaluation designed so answers stay accurate.</p>
+            <ul class="tags"><li>RAG</li><li>Embeddings</li><li>pgvector</li><li>Qdrant</li></ul>
+          </article>
+          <article>
+            <h3>Multi-agent systems</h3>
+            <p>Agents that plan, call tools and hand work to each other, orchestrated with clear routing and control over prompts and behavior.</p>
+            <ul class="tags"><li>LangGraph</li><li>Google ADK</li><li>MCP</li><li>LLM routing</li></ul>
+          </article>
+          <article>
+            <h3>Fine-tuning and evaluation</h3>
+            <p>Domain-adapted models trained on your data, and the benchmarks and metrics to prove they are better than the base model.</p>
+            <ul class="tags"><li>LoRA</li><li>QLoRA</li><li>SFT</li><li>PEFT</li><li>vLLM</li></ul>
+          </article>
+          <article>
+            <h3>Production AI infrastructure</h3>
+            <p>Scalable inference and event-driven pipelines on the cloud, from Kubernetes clusters to serverless queues and functions.</p>
+            <ul class="tags"><li>AWS EKS</li><li>Lambda</li><li>SQS</li><li>Vertex AI</li><li>Terraform</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="wrap">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills">
+          <div>
+            <h3>Languages</h3>
+            <ul class="tags"><li>Python</li><li>SQL</li><li>Node.js</li></ul>
+          </div>
+          <div>
+            <h3>LLM and AI frameworks</h3>
+            <ul class="tags"><li>LangChain</li><li>LangGraph</li><li>Hugging Face Transformers</li><li>PyTorch</li><li>TensorFlow</li><li>PEFT</li><li>vLLM</li><li>LLaMA-Factory</li><li>Google ADK</li><li>FastMCP</li></ul>
+          </div>
+          <div>
+            <h3>Techniques</h3>
+            <ul class="tags"><li>RAG</li><li>Fine-tuning (LoRA, QLoRA, SFT)</li><li>Pre-training</li><li>Prompt engineering</li><li>Embeddings</li><li>Semantic search</li><li>LLM routing</li><li>Multi-agent orchestration</li><li>Model Context Protocol</li></ul>
+          </div>
+          <div>
+            <h3>Cloud and infrastructure</h3>
+            <ul class="tags"><li>AWS Lambda</li><li>AWS SQS</li><li>AWS EKS</li><li>AWS EventBridge</li><li>AWS Bedrock</li><li>GCP Vertex AI</li><li>GCP Cloud Run</li><li>Kubernetes</li><li>Docker</li><li>Terraform</li></ul>
+          </div>
+          <div>
+            <h3>Databases</h3>
+            <ul class="tags"><li>PostgreSQL</li><li>pgvector</li><li>ChromaDB</li><li>Qdrant</li></ul>
+          </div>
+          <div>
+            <h3>Tools</h3>
+            <ul class="tags"><li>FastAPI</li><li>Flask</li><li>Azure DevOps</li><li>GitHub</li><li>Notion</li><li>Slack</li></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="wrap">
+        <h2 class="section-title">Experience</h2>
+        <ol class="timeline">
+
+          <li class="job current">
+            <div class="job-head">
+              <div>
+                <h3>Senior GenAI Software Engineer</h3>
+                <p class="job-company"><a href="https://www.linkedin.com/company/deloitte/posts/?feedView=all">Deloitte</a>, Disruption Office</p>
+              </div>
+              <span class="job-when">May 2025 – Present</span>
+            </div>
+            <p>Architected and developed the multi-agent orchestrator behind TaxBrain, one of Deloitte's flagship Tax assets: a high-investment platform that helps enterprise clients navigate Brazil's 2026 tax reform. Built the core chatbot with AI agents and RAG to retrieve and surface specific regulatory changes from the new legislation.</p>
+            <ul class="points">
+              <li><strong>Multi-agent orchestration:</strong> built the orchestration layer with LangGraph and Flask, running dynamic multi-agent workflows on Kubernetes (AWS EKS) for production-grade inference.</li>
+              <li><strong>Model Context Protocol:</strong> redesigned the orchestrator used across the Disruption Office around MCP, giving teams finer control over tool routing, prompt management and agent behavior.</li>
+              <li><strong>Invited talks:</strong> presented GenAI applications to PRODAM (São Paulo City IT Agency) and at the Jardim Digital event, representing Deloitte's AI innovation practice.</li>
+            </ul>
+            <ul class="tags"><li>LangGraph</li><li>Flask</li><li>RAG</li><li>MCP</li><li>AWS EKS</li><li>Kubernetes</li></ul>
+            <details class="refs">
+              <summary>References</summary>
+              <ul><li>Paulo Lima, <a href="https://www.linkedin.com/in/paulo-jg-lima/">LinkedIn</a></li></ul>
+            </details>
+          </li>
+
+          <li class="job current">
+            <div class="job-head">
+              <div>
+                <h3>AI Researcher</h3>
+                <p class="job-company"><a href="https://www.linkedin.com/company/centrodeexcelenciaemia/posts/?feedView=all">CEIA</a>, Centro de Excelência em Inteligência Artificial</p>
+              </div>
+              <span class="job-when">Feb 2025 – Present</span>
+            </div>
+            <p>Leading the end-to-end development of a multi-agent WhatsApp chatbot, from the Meta WhatsApp Business API integration to production deployment.</p>
+            <ul class="points">
+              <li><strong>Event-driven architecture:</strong> designed the system on AWS Lambda, SQS FIFO queues and Google's Agent Development Kit, following message-bus patterns for reliable, ordered processing.</li>
+              <li><strong>Serverless infrastructure:</strong> owned the full setup on AWS, including webhooks, message routing and real-time agent orchestration.</li>
+            </ul>
+            <ul class="tags"><li>Google ADK</li><li>AWS Lambda</li><li>SQS</li><li>WhatsApp Business API</li></ul>
+            <details class="refs">
+              <summary>References</summary>
+              <ul><li>Anderson Carlos, <a href="https://www.linkedin.com/in/andcarlos/">LinkedIn</a></li></ul>
+            </details>
+          </li>
+
+          <li class="job">
+            <div class="job-head">
+              <div>
+                <h3>NLP Data Scientist</h3>
+                <p class="job-company"><a href="https://www.linkedin.com/company/comsentimento/posts/?feedView=all">Comsentimento</a></p>
+              </div>
+              <span class="job-when">Feb 2024 – Feb 2025</span>
+            </div>
+            <p>Applied clinical NLP and LLMs to match patients with clinical trials, working on production pipelines that analyze eligibility criteria in medical notes.</p>
+            <ul class="points">
+              <li><strong>Clinical LLMs in production:</strong> integrated open-source clinical models (BioMistral, Meditron) into the pipeline, improving automated analysis of study criteria.</li>
+              <li><strong>Semantic search:</strong> fine-tuned embedding models, increasing retrieval accuracy for clinical trial matching.</li>
+              <li><strong>Evaluation and monitoring:</strong> built evaluation methods for model outputs and a real-time monitoring dashboard, making the pipeline more reliable.</li>
+              <li><strong>Com+Care:</strong> contributed to a multi-agent WhatsApp chatbot (LangGraph) that answers patients' questions about clinical studies and surfaces relevant ClinicalTrials.gov research.</li>
+            </ul>
+            <ul class="tags"><li>BioMistral</li><li>Meditron</li><li>Embeddings</li><li>LangGraph</li></ul>
+            <details class="refs">
+              <summary>References</summary>
+              <ul>
+                <li>Guilherme Sakajiri, <a href="https://www.linkedin.com/in/guilhermesakajiri/">LinkedIn</a></li>
+                <li>Lucas Silva Oliveira, <a href="https://www.linkedin.com/in/lucassilvaoliveira/">LinkedIn</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li class="job">
+            <div class="job-head">
+              <div>
+                <h3>NLP Researcher</h3>
+                <p class="job-company"><a href="https://www.linkedin.com/company/hailab-pucpr/">HAILab-PUCPR</a>, Health Artificial Intelligence Lab</p>
+              </div>
+              <span class="job-when">Oct 2023 – Feb 2025</span>
+            </div>
+            <p>Led the development of LLMs specialized in Brazilian Portuguese clinical and biomedical text, producing the first LLM trained on Brazilian clinical data. Owned the data lifecycle, from cleaning and de-identifying patient records (LGPD-compliant) to training, evaluation and inference.</p>
+            <ul class="points">
+              <li><strong>Continued pre-training:</strong> domain-adapted LLaMA 2 7B on clinical and biomedical corpora with LLaMA-Factory and Hugging Face Accelerate, on Vertex AI from a single A100 to multi-GPU.</li>
+              <li><strong>Fine-tuning:</strong> applied LoRA, QLoRA and full fine-tuning (SFT) on biomedical question-answering datasets.</li>
+              <li><strong>Evaluation:</strong> benchmarked models on MMLU and custom clinical metrics, setting baselines for Portuguese clinical NLP. Published at BRACIS 2024, where the paper won 3rd Place Best Paper.</li>
+            </ul>
+            <ul class="tags"><li>LLaMA 2</li><li>LoRA</li><li>QLoRA</li><li>Vertex AI</li><li>LLaMA-Factory</li></ul>
+            <details class="refs">
+              <summary>References</summary>
+              <ul>
+                <li>Andrey Rodrigues de Freitas, NLP Researcher, <a href="https://www.linkedin.com/in/andreyfreitas/">LinkedIn</a></li>
+                <li>Anderson Carlos, NLP Researcher, <a href="https://www.linkedin.com/in/andcarlos/">LinkedIn</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li class="job">
+            <div class="job-head">
+              <div>
+                <h3>Junior Data Scientist</h3>
+                <p class="job-company"><a href="https://www.linkedin.com/company/cadastra/">Cadastra</a>, SEO and Data team</p>
+              </div>
+              <span class="job-when">Sep 2022 – Feb 2024</span>
+            </div>
+            <p>Built data pipelines, scrapers and LLM-powered tools for the SEO practice of a digital marketing agency, used by enterprise clients such as Samsung, Vivara and Gerdau.</p>
+            <ul class="points">
+              <li><strong>LLM content generation:</strong> shipped a pipeline that feeds crawler and analytics data (Screaming Frog, Ahrefs, GA4) into the GPT API, delivered through an automated dashboard adopted by 32 clients. Extended it with LangChain agents for on-brand product descriptions and articles.</li>
+              <li><strong>RAG onboarding assistant:</strong> won the company hackathon with a Q&amp;A assistant built on LangChain, ChromaDB, Streamlit and the ChatGPT API over internal onboarding documents.</li>
+              <li><strong>Cloud data collection:</strong> ran Selenium scrapers on AWS EC2 for Search Console, Google Trends, robots.txt and server logs, storing results in S3.</li>
+            </ul>
+            <ul class="tags"><li>LangChain</li><li>OpenAI API</li><li>ChromaDB</li><li>AWS EC2</li><li>S3</li></ul>
+            <details class="refs">
+              <summary>References</summary>
+              <ul>
+                <li>Gabriel Machado, SEO Data Engineer, <a href="https://www.linkedin.com/in/gabriel-ant-machado/">LinkedIn</a></li>
+                <li>Fernanda Aparecida, SEO Coordinator, <a href="https://www.linkedin.com/in/fernanda-aparecida-s/">LinkedIn</a></li>
+              </ul>
+            </details>
+          </li>
+
+          <li class="job">
+            <div class="job-head">
+              <div>
+                <h3>Production Planner Analyst</h3>
+                <p class="job-company">Malta Brewery</p>
+              </div>
+              <span class="job-when">Feb 2019 – Apr 2022</span>
+            </div>
+            <p>Planned and monitored brewery production lines with the Head Brewer and Industrial Manager. This is where I first used data to drive operational decisions.</p>
+            <ul class="points">
+              <li><strong>Planning and analytics:</strong> built spreadsheet models and dashboards for weekly production planning and daily reporting, helping reduce production losses.</li>
+              <li><strong>Inventory and ERP:</strong> owned the monthly closing of raw materials and inputs, including reconciliation in the ERP system.</li>
+            </ul>
+            <details class="refs">
+              <summary>References</summary>
+              <ul>
+                <li>Rogério Bellini, Industrial Manager, <a href="https://www.linkedin.com/in/rog%C3%A9rio-wohnrath-bellini-9433843b/">LinkedIn</a></li>
+                <li>Anderson Ides, Process Supervisor, <a href="https://www.linkedin.com/in/anderson-ides-49a0a34b/">LinkedIn</a></li>
+              </ul>
+            </details>
+          </li>
+
+        </ol>
+      </div>
+    </section>
+
+    <!-- Publications -->
+    <section class="section" id="research">
+      <div class="wrap">
+        <h2 class="section-title">Publications</h2>
+        <article class="paper">
+          <p class="paper-venue">BRACIS 2024, Springer Nature</p>
+          <h3>MED-LLM-BR: Developing Resource-Efficient Clinical LLMs for Brazilian Portuguese</h3>
+          <p class="authors">J. G. S. Pinto et al. Intelligent Systems (BRACIS 2024), published January 2025.</p>
+          <p>Introduces the first clinical LLM for Brazilian Portuguese, trained on diverse clinical datasets with parameter-efficient fine-tuning (LoRA, QLoRA) and validated with a robust evaluation protocol. Received the 3rd Place Best Paper Award.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="https://link.springer.com/chapter/10.1007/978-3-031-79038-6_4">Read on Springer</a>
+            <a class="btn" href="https://doi.org/10.1007/978-3-031-79038-6_4">DOI 10.1007/978-3-031-79038-6_4</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="section" id="achievements">
+      <div class="wrap">
+        <h2 class="section-title">Achievements</h2>
+        <ul class="awards">
+          <li>
+            <span class="year">2024</span>
+            <div>
+              <h3>Best Paper Award, 3rd place, BRACIS 2024</h3>
+              <p>Lead author of MED-LLM-BR, selected among hundreds of submissions at the Brazilian Conference on Intelligent Systems, Brazil's premier AI conference.</p>
+            </div>
+          </li>
+          <li>
+            <span class="year">2024</span>
+            <div>
+              <h3>Intel Software Innovator Program, Highlight of the Month</h3>
+              <p>Recognized by Intel for building a quantized GGUF version of the clinical LLM with Alessandro de Oliveira, enabling efficient edge deployment of healthcare AI.</p>
+            </div>
+          </li>
+          <li>
+            <span class="year">2025</span>
+            <div>
+              <h3>Invited talks on Generative AI</h3>
+              <p>Speaker for PRODAM, São Paulo's city IT agency, and at the Jardim Digital event, representing Deloitte's AI innovation practice.</p>
+            </div>
+          </li>
+          <li>
+            <span class="year">2022–24</span>
+            <div>
+              <h3>Company hackathon winner</h3>
+              <p>First place with a RAG assistant that answers new hires' questions from internal onboarding documents.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="wrap">
+        <h2 class="section-title">Education</h2>
+        <div>
+          <ul class="degrees">
+            <li>
+              <h3>Postgraduate, Software Engineering: Automation and Innovation with Generative AI</h3>
+              <p><a href="https://ufg.br/">Universidade Federal de Goiás (UFG)</a>, AKCIT/Embrapii. 2025 – present.</p>
+            </li>
+            <li>
+              <h3>BTech, Big Data Technology and Analytics</h3>
+              <p><a href="https://www.pucpr.br/">Pontifícia Universidade Católica do Paraná (PUC-PR)</a>, Londrina. Sep 2020 – Apr 2023.</p>
+            </li>
+          </ul>
+
+          <h3 class="subhead">Courses and certificates</h3>
+          <ul class="courses">
+            <li>
+              <h4><a href="pdf/dsa/certificate-deploy-de-modelos-de-machine-learning-5f7aa55be32fc30f0d0ea09e-2.pdf">Deploying Machine Learning Models</a></h4>
+              <p>Jun 2023. Serving models on AWS, GCP and Azure with MLflow, Kubeflow, Flask and Streamlit.</p>
+            </li>
+            <li>
+              <h4><a href="https://mycourse.app/Gk3UjdhjM5RGiZzz6">Fundamentals of Software Engineering</a></h4>
+              <p>Oct 2022. Clean, tested and versioned Python; code review, logging and debugging.</p>
+            </li>
+            <li>
+              <h4><a href="https://analytics.google.com/analytics/academy/certificate/pDWEeywvTk-5hprNHekzQw">Google Analytics Advanced</a></h4>
+              <p>Oct 2022. Custom dimensions, segmentation, attribution and reporting.</p>
+            </li>
+            <li>
+              <h4><a href="https://coursera.org/share/a841104c3adb01a9dbb78984bc9b16c2">Introduction to Statistics</a></h4>
+              <p>Sep 2022. Probability, sampling, hypothesis testing and regression.</p>
+            </li>
+            <li>
+              <h4><a href="pdf/dsa/certificate-python-fundamentos-para-analise-de-dados-30-57b4a75247d7dd688d8b456b.pdf">Python for Data Analysis 3.0</a></h4>
+              <p>Jul 2022. pandas, NumPy and visualization for exploratory analysis.</p>
+            </li>
+            <li>
+              <h4><a href="https://mycourse.app/4eLmn1xMUCFBjG7m9">Big Data Fundamentals 3.0</a></h4>
+              <p>Jul 2022. Data lakes, data warehouses and the Hadoop/Spark ecosystem.</p>
+            </li>
+            <li>
+              <h4><a href="https://coursera.org/share/c4149f99605c146bbda381a2d0330219">Introduction to Big Data</a></h4>
+              <p>Dec 2021. Distributed processing with Apache Spark.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section class="section" id="projects">
+      <div class="wrap">
+        <h2 class="section-title">Projects<small>Earlier machine learning work. More AI projects coming soon.</small></h2>
+        <ul class="projects">
+          <!-- To add a project, copy one <li class="project"> block below. -->
+          <li class="project">
+            <img src="images/portfolio/crypto.png" alt="Cryptocurrency-Daily dashboard" width="936" height="646" loading="lazy">
+            <div class="project-body">
+              <h3>Cryptocurrency-Daily</h3>
+              <p>End-to-end app for cryptocurrency price prediction, with a front end, a back end and a machine learning model for daily analysis and forecasts.</p>
+              <ul class="tags"><li>Python</li><li>Machine learning</li><li>Deploy</li></ul>
+              <a class="more" href="https://github.com/Joaogabs1346/Cryptocurrency-Daily">View on GitHub</a>
+            </div>
+          </li>
+          <li class="project">
+            <img src="images/portfolio/churn.png" alt="Customer churn prediction charts" width="936" height="646" loading="lazy">
+            <div class="project-body">
+              <h3>Customer Churn Prediction</h3>
+              <p>Models that predict churn for a telecom company from customer demographics, account data and usage, so the company can act before customers leave.</p>
+              <ul class="tags"><li>scikit-learn</li><li>Classification</li></ul>
+              <a class="more" href="https://github.com/Joaogabs1346/Machine-Learning/tree/main/Churn">View on GitHub</a>
+            </div>
+          </li>
+          <li class="project">
+            <img src="images/portfolio/water2.png" alt="Water potability analysis" width="936" height="646" loading="lazy">
+            <div class="project-body">
+              <h3>Water Potability Prediction</h3>
+              <p>Predicts whether water is safe to drink from physicochemical measurements such as pH, hardness and sulfate.</p>
+              <ul class="tags"><li>scikit-learn</li><li>EDA</li></ul>
+              <a class="more" href="https://github.com/Joaogabs1346/Machine-Learning/blob/main/Water%20Potability/Water_potability.ipynb">View on GitHub</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Quote -->
+    <section class="quote" aria-label="Quote">
+      <div class="wrap">
+        <blockquote>
+          <p>“There is nothing outside of yourself that can ever enable you to get better, stronger, richer, quicker, or smarter. Everything is within. Seek nothing outside of yourself.”</p>
+          <footer>Miyamoto Musashi, The Book of Five Rings</footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section contact" id="contact">
+      <div class="wrap">
+        <h2 class="section-title">Contact</h2>
+        <div>
+          <p class="contact-pitch">Building something with LLMs or agents? Let's talk.</p>
+          <p class="muted">The fastest way to reach me is email or LinkedIn.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="mailto:joaogabrieldesouza58@gmail.com"><svg aria-hidden="true"><use href="#i-mail"/></svg>joaogabrieldesouza58@gmail.com</a>
+            <a class="btn" href="https://www.linkedin.com/in/joaogabrielspinto/"><svg aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a>
+            <a class="btn" href="pdf/cv/cvJoaoGabriel.pdf" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-download"/></svg>Resume</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>© 2026 João Gabriel de Souza Pinto</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
 </body>
-
 </html>
